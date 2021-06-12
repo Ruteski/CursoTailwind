@@ -1,0 +1,27 @@
+{
+  "name": "CursoTailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruteski/CursoTailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruteski/CursoTailwind/issues"
+  },
+  "homepage": "https://github.com/Ruteski/CursoTailwind#readme",
+  "dependencies": {
+    "tailwindcss": "^2.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.2"
+  }
+}
