@@ -5,13 +5,114 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/build.css">
-  <title>Tailwind V2</title>
+  <title>Construção do Layout</title>
 </head>
 <body>
-  <div class="p-10">
-    <div class="bg-green-400 p-10 text-white font-bold">
-      <p >Testando Tailwind</p>
+  <div class="container bg-red-300 mx-auto p-4 my-4 text-red-900 border-red-600 border-2">
+    <p>O texto do container</p>
+  </div>
+
+<!-- Exercicio 1 -->
+
+  <div class="container bg-green-600 mx-auto p-4 my-4 md:bg-blue-600">
+    <p>Exercicio 1</p>
+  </div>
+
+  <!-- Box sizing  -->
+  <div class="container bg-purple-700 m-4 box-border border-2 border-purple-900 p-10">
+    <p>Border box</p>
+  </div>
+  <div class="container bg-gray-700 m-4 box-content border-2 border-gray-900 p-10">
+    <p>Box content</p>
+  </div>
+
+  <!-- Display -->
+  <div class="container ">
+    <span class="block bg-red-300">Não são elementos de bloco</span>
+    <span class="block bg-red-300">Não são elementos de bloco</span>
+    <div class="bg-blue-500 inline-block">block</div>
+    <div class="bg-blue-500 inline-block">block</div>
+    <div class="bg-green-600 hidden">estou aparecendo</div>
+  </div>
+
+  <!-- Exercicio 2 -->
+  <div class="container bg-red-200 m-6 p-4">
+    <div class="bg-red-300 inline-block">div 1</div>
+    <div class="bg-red-500 inline-block">div 2</div>
+    <div class="bg-red-700 inline-block">div 3</div>
+  </div>
+
+  <!-- Float Clear -->
+  <div class="bg-gray-500 float-right">Float rigth</div>
+  <div class="bg-gray-500 float-left">Float left</div>
+  <div class="clear-both"></div>
+  <div class="bg-gray-500 float-right">Float rigth</div>
+  <div class="bg-gray-500 float-left">Float left</div>
+  <div class="clear-both"></div>
+
+  <!-- Overflow -->
+  <div class="overflow-hidden h-16 m-6 bg-red-300">
+    <p>testando overflow HIDDEN</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+  </div>
+
+  <div class="overflow-auto h-16 m-6 bg-blue-300">
+    <p>testando overflow AUTO</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+  </div>
+
+  <div class="overflow-x-auto h-16 m-6 bg-green-300">
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </div>
+
+  <div class="overflow-y-auto h-16 m-6 bg-purple-300">
+    <p>testando overflow Y AUTO</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+    <p>testando overflow</p> 
+  </div>
+
+  <!-- Position e direction -->
+  <div class="relative bg-pink-300">
+    <p>teste</p>
+    <div class="absolute top-0 right-0 bg-pink-900">
+      <p>Absolute</p>
     </div>
-</div>
+  </div>
+
+  <!-- Exercicio 3 -->
+  <div class="container relative h-10 bg-pink-300 m-4">
+    teste
+    <div class="absolute bottom-0 right-0 bg-pink-500">
+      <p>exercicio 3</p>
+    </div>
+  </div>
+
+  <!-- Visibilidade -->
+  <div class="container bg-red-500 invisible m-10">
+    estou oculto
+  </div>
+
+  <!-- Z-index -->
+  <div class="container relative">
+    <div class="bg-red-300 w-20 h-20 p-6 absolute z-10">na frente </div>
+    <div class="bg-red-600 w-20 h-20 p-6 absolute m-4">atras </div>
+  </div>
+
+  <!-- Exercicio 4 -->
+
+    <div class="container relative h-20">
+      <div class="bg-red-300 w-30 h-30 p-6 absolute z-10">div 1</div>
+      <div class="bg-red-500 w-30 h-30 p-6 absolute z-20 m-4">div 2</div>
+      <div class="bg-red-700 w-30 h-30 p-6 absolute z-30 m-8">div 3</div>
+    </div>
+
 </body>
 </html>
